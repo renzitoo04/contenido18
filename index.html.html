@@ -1,0 +1,219 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Micaela Delfos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #ff69b4, #7b2ff7, #00c9ff);
+      background-size: 600% 600%;
+      animation: gradientMove 10s ease infinite;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      text-shadow: 0 0 10px #ff69b4;
+    }
+
+    .image-container {
+      position: relative;
+      width: 90%;
+      max-width: 450px;
+      background-color: #1e90ff;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    .white-background {
+      background-color: white;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .contact button.whatsapp {
+            background-color: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    .contact button.whatsapp:hover {
+            background-color: #1DA851;
+        }
+    .contact button.whatsapp img.whatsapp-logo {
+            width: 20px;
+            height: 20px;
+        }
+
+    .btn-whatsapp-over {
+      position: absolute;
+      top: 190px;
+      left: 56%;
+      transform: translateX(-50%);
+      background-color: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      text-align: center;
+      padding: 1.5rem 2.2rem;
+      font-size: 1.1rem;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      z-index: 20;
+      border: 2px solid #fff;
+      letter-spacing: 1px;
+      min-width: 120px;
+      cursor: pointer;
+    }
+
+    .btn-whatsapp-over:hover {
+      background-color: #1DA851;
+      transform: translateX(-50%) scale(1.05);
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5), 0 4px 12px rgba(0,0,0,0.18);
+    }
+
+    .btn-whatsapp-over .whatsapp-logo {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .btn-onlyfans {
+      position: absolute;
+      top: 430px;
+      left: 61%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #00aff0, #3c3cbe);
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      text-align: center;
+      padding: 1.5rem 2.2rem;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease;
+      width: 55%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+      border: 2px solid #fff;
+      cursor: pointer;
+    }
+
+    .btn-onlyfans:hover {
+      background: linear-gradient(135deg, #009de0, #2a2a9e);
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    .btn-onlyfans .onlyfans-logo {
+      width: 35px;
+      height: 35px;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 360px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .image-container {
+        width: 95%;
+        padding: 10px;
+      }
+
+      .white-background {
+        padding: 8px;
+      }
+
+      .btn-whatsapp-over {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+      }
+
+      .btn-onlyfans {
+        padding: 0.9rem 0;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Micaela Delfos</h1>
+    <div class="image-container">
+      <div class="white-background">
+        <img src="micaela.png.png" alt="Micaela Delfos">
+        <a href="https://wa.me/52944585356" target="_blank" class="btn-whatsapp-over">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo" />
+          WhatsApp
+        </a>
+      </div>
+      <a href="https://onlyfans.com" target="_blank" class="btn-onlyfans">
+        <svg class="onlyfans-logo" viewBox="0 0 1024 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="288" cy="288" r="224" fill="#00aff0"/>
+          <path d="M576 288c0-159.06 129.06-288 288-288-32 128-96 192-192 224 96 32 160 96 192 224-158.94 0-288-128.94-288-288z" fill="#009de0"/>
+          <circle cx="288" cy="288" r="80" fill="#fff"/>
+        </svg>
+        OnlyFans
+      </a>
+    </div>
+  </div>
+</body>
+</html>
