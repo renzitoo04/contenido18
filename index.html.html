@@ -200,7 +200,7 @@
     .btn-onlyfans:hover,
     .btn-onlyfans:active {
       background: linear-gradient(135deg, #3c3cbe 0%, #00aff0 100%);
-      transform: scale(1.03);
+      transform: translateX(-50%) scale(1.03); /* <-- así no se mueve */
       box-shadow: 0 8px 32px rgba(0, 59, 180, 0.18);
     }
 
@@ -283,10 +283,11 @@
         ¡🔥Mira todo lo que tengo para vos🔥!
       </div>
       <a href="https://onlyfans.com" target="_blank" class="btn-onlyfans">
-        <svg class="onlyfans-logo" viewBox="0 0 1024 576" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="288" cy="288" r="224" fill="#00aff0"/>
-          <path d="M576 288c0-159.06 129.06-288 288-288-32 128-96 192-192 224 96 32 160 96 192 224-158.94 0-288-128.94-288-288z" fill="#009de0"/>
-          <circle cx="288" cy="288" r="80" fill="#fff"/>
+        <svg class="onlyfans-logo" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="30" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#00aff0" letter-spacing="2">O</text>
+          <circle cx="19" cy="20" r="7" fill="#fff"/>
+          <path d="M19 15a5 5 0 0 1 5 5v2h-10v-2a5 5 0 0 1 5-5zm-2 7v2a2 2 0 1 0 4 0v-2" stroke="#00aff0" stroke-width="1.5" fill="none"/>
+          <text x="32" y="30" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#009de0" letter-spacing="1">nlyFans</text>
         </svg>
         OnlyFans
       </a>
