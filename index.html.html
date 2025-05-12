@@ -66,7 +66,11 @@
     }
 
     .white-background {
-      background: url('sabias que.png') center center/cover no-repeat, linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      background:
+        linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%),
+        url('sabias que.png') center top/100% auto no-repeat;
+      /*      ^^^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              Esto alinea la imagen arriba y la ajusta al ancho */
       padding: 16px;
       border-radius: 18px;
       margin-bottom: 16px;
